@@ -1,0 +1,67 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.suggetions{
+display: none;
+}
+.story-mainbody{
+    display: none;
+}
+
+.instagram-logo-name{
+    display: none;
+}
+.horizontal-header-master-cont{
+    display: flex;
+}
+
+#header-explore-cont{
+    display: none;
+}
+
+#header-message-cont{
+    display: none;
+}
+
+#header-notification-cont{
+    display: none;
+}
+#image-horizonatal-header {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#svg-horizonatal-header{
+    width: 22px;
+    height: 20px;
+}
+
+#a-header-home{
+    display: none;
+}
+
+.sabkaBaap{
+    
+    width: 100%;
+    height: 10vw;
+    background-color: #7e1717;
+    
+
+}
+
+#header-horizontal-more{
+    display: none;
+}
+
+.horizontal-header-a{
+    display: none;
+}
+
+.horizontal-header-svg{
+    margin-left: 32px;
+    margin-top: 10px;
+    
+}
