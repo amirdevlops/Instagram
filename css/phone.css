@@ -3,6 +3,10 @@ padding: 0;
 margin: 0;
 }
 
+.header-horizontal{
+    width: 100%;
+}
+
 .suggetions{
 display: none;
 }
@@ -65,8 +69,8 @@ display: none;
 }
 
 .horizontal-header-svg{
-    margin-left: 65px;
-    margin-top: 10px;
+    /*margin-left: 65px;
+    margin-top: 10px;*/
 
 }
 
@@ -107,3 +111,10 @@ display: none;
     align-items: center;
 }
 
+.horizontal-header-master-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
