@@ -1,54 +1,57 @@
-*{
-padding: 0;
-margin: 0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.header-horizontal{
+.header-horizontal {
     width: 100%;
 }
 
-.suggetions{
-display: none;
-}
-.story-mainbody{
+.suggetions {
     display: none;
 }
 
-.instagram-logo-name{
+.story-mainbody {
     display: none;
 }
-.horizontal-header-master-cont{
+
+.instagram-logo-name {
+    display: none;
+}
+
+.horizontal-header-master-cont {
     display: flex;
 }
 
-#header-explore-cont{
+#header-explore-cont {
     display: none;
 }
 
-#header-message-cont{
+#header-message-cont {
     display: none;
 }
 
-#header-notification-cont{
+#header-notification-cont {
     display: none;
 }
+
 #image-horizonatal-header {
     width: 24px;
     height: 24px;
     border-radius: 50%;
 }
 
-#svg-horizonatal-header{
+#svg-horizonatal-header {
     width: 22px;
     height: 20px;
 }
 
-#a-header-home{
+#a-header-home {
     display: none;
 }
 
-.sabkaBaap{
-    
+.sabkaBaap {
+
     width: 100%;
     height: 15vw;
     background-color: #000000;
@@ -60,35 +63,34 @@ display: none;
 
 }
 
-#header-horizontal-more{
+#header-horizontal-more {
     display: none;
 }
 
-.horizontal-header-a{
+.horizontal-header-a {
     display: none;
 }
 
-.horizontal-header-svg{
-    /*margin-left: 65px;
-    margin-top: 10px;*/
 
-}
-
-.phone-header{
+.phone-header {
     width: 100%;
     height: 15vw;
-    background-color: aquamarine;
+    background-color: black;
     display: flex;
 
 }
 
-#Layer_2{
+.phone-header-childe-cont {
+    width: 100%;
+}
+
+#Layer_2 {
     fill: rgb(255, 255, 255);
     width: 32vw;
     margin-top: 10px;
 }
 
-.phone-header-svg-cont-instagram{
+.phone-header-svg-cont-instagram {
     height: 100%;
     width: 30%;
     display: flex;
@@ -96,25 +98,46 @@ display: none;
     justify-content: center;
 }
 
-.phone-header-search-input{
+.phone-header-search-input {
     background-color: #262626;
-    width: 268px;
+    width: 55vw;
     height: 36px;
+    border: none;
+    border-radius: 8px;
 }
 
-.phone-header-childe-cont{
+.phone-header-childe-cont {
     display: flex;
 }
 
-.phone-header-search-input-cont{
+.phone-header-search-input-cont {
     display: flex;
     align-items: center;
 }
 
-.horizontal-header-master-cont{
+.horizontal-header-master-cont {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+
+.notification-phone-svg-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#phone-svg-horizonatal-header{
+    height: 23px;
+    width: 21px;
+}
+
+#svg-horizonatal-header-home{
+    
+    width: 25px;
+    height: 25px;
 }
