@@ -46,12 +46,13 @@ display: none;
 .sabkaBaap{
     
     width: 100%;
-    height: 10vw;
-    background-color: #7e1717;
-     position: fixed;
+    height: 15vw;
+    background-color: #000000;
+    position: fixed;
     left: 0;
     bottom: 0;
-    
+    display: flex;
+    align-items: center;
 
 }
 
@@ -64,7 +65,45 @@ display: none;
 }
 
 .horizontal-header-svg{
-    margin-left: 50px;
+    margin-left: 65px;
     margin-top: 10px;
-    
+
 }
+
+.phone-header{
+    width: 100%;
+    height: 15vw;
+    background-color: aquamarine;
+    display: flex;
+
+}
+
+#Layer_2{
+    fill: rgb(255, 255, 255);
+    width: 32vw;
+    margin-top: 10px;
+}
+
+.phone-header-svg-cont-instagram{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-header-search-input{
+    background-color: #262626;
+    width: 268px;
+    height: 36px;
+}
+
+.phone-header-childe-cont{
+    display: flex;
+}
+
+.phone-header-search-input-cont{
+    display: flex;
+    align-items: center;
+}
+
