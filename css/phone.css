@@ -78,6 +78,7 @@
     background-color: black;
     display: flex;
     position: fixed;
+    z-index: 100;
 }
 
 .phone-header-childe-cont {
@@ -105,7 +106,7 @@
     border: none;
     border-radius: 8px;
     color: white;
-   
+
 }
 
 .phone-header-childe-cont {
@@ -116,10 +117,10 @@
     display: flex;
     align-items: center;
     margin-left: 8px;
-  
+
 }
 
-.phone-header-search-input::placeholder{
+.phone-header-search-input::placeholder {
     color: #a8a8a8a8;
     padding: 0 12px;
 }
@@ -133,67 +134,199 @@
 }
 
 
-.notification-phone-svg-cont{
+.notification-phone-svg-cont {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#phone-svg-horizonatal-header{
+#phone-svg-horizonatal-header {
     height: 23px;
     width: 21px;
 }
 
-#svg-horizonatal-header-home{
-    
+#svg-horizonatal-header-home {
+
     width: 25px;
     height: 25px;
 }
 
 /*story main body */
 
-.story-image-cont{
+.story-image-cont {
     width: 25px;
     height: 25px;
-border-radius: 50%;
-overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.story-image-cont img{
+.story-image-cont img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.reels-folloing-cont-video img{
-    width: 100px;
-    height: 100px;
+
+
+.story-mainbody{
+    background-color: black ;
+    height: 300vh;
 }
 
-.div-story-mainbody{
+.div-story-mainbody {
     padding-top: 20%;
 }
 
-.story-childe-cont{
-    display: flex;
+.story-childe-cont {
+    height: 25vw;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
-.video-information-main{
+
+.story-image-name-manicont {
+
+    width: 10%;
+    height: 100%;
+    transition: 1s;
+}
+
+.video-information-main {
     display: flex;
-    
+
 
 }
 
-#name-user-video-dot-svg{
+#name-user-video-dot-svg {
     fill: #a8a8a8a8;
     width: 5px;
     height: 5px;
 }
 
-.video-owner-name-reels{
+.video-owner-name-reels {
     font-size: 15px;
 }
-.online-seens-reel{
+
+.online-seens-reel {
     font-size: 11px;
+
+}
+
+#slider-container {
+
+
+    position: relative;
+}
+
+#slider {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide {
+
+    height: auto;
+}
+
+
+/* the upper code is for testing perpose only*/
+.video-header-cont-main-container{
+    display: flex;
+    padding: 0 16px 12px;
+}
+
+
+.owner-image-rells-cont{
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.owner-image-rells-cont img{
+    width: 100%;
+    height: 100%;
+}
+svg{
+    fill: #fff;
+}
+#more-reels-header{
+    fill: rgb(245, 245, 245);
+
+}
+
+.cont-video-owner-aoudio-cont b{
+color: white;
+}
+
+.video-owner-name-reels{
+    font-weight:900 ;
+
+}
+
+.aoudio-maker-origanal{
+    font-size: 11px;
+}
+
+.more-reels-svg-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33vw;
+}
+
+#comment-section-heart-svg{
+    width: 24px;
+    height: 24px;
+}
+
+.svg-cont-comment-sections{
+    display: flex;
+}
+
+.video-cont-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.reels-folloing-cont-video{
+    width: 74%;
+    background-color: red;
+    height: 70vh;
+}
+
+.reels-folloing-cont-video img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.svg-cont-comment-sections{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8px;
+}
+
+.cont-comment-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.comment-section-save{
+    margin-right: 20px;
+}
+
+
+.fillwhite{
+    fill: #fff;
+}
+
+.x1n2onr6{
+    fill:rgb(255, 48, 64);
+
 }
