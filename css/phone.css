@@ -171,7 +171,7 @@
 .story-mainbody{
     background-color: black ;
     height: 300vh;
-    padding-top: 18%;
+    padding-top: 12%;
 }
 
 .div-story-mainbody {
@@ -234,6 +234,7 @@
 .video-header-cont-main-container{
     display: flex;
     padding: 0 16px 12px;
+    justify-content: space-between;
 }
 
 
@@ -274,7 +275,7 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 33vw;
+    margin-right: 9vw;
 }
 
 #comment-section-heart-svg{
