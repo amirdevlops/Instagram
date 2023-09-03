@@ -1,97 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mobile Touch Slider</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  #slider-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  #slider {
-    display: flex;
-    transition: 0.5s;
-  }
-  .slide {
-    min-width: 100%;
-    height: auto;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
-</head>
-<body>
-<div id="slider-container">
-  <div id="slider">
-    <div class="slide">
-      <img src="../images/365464149_1508138926391994_7902937506438576518_n.jpg" alt="Slide 1">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Draggable Slider Tabs | CodingNepal</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="../javaScript/test.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+      <ul class="tabs-box">
+        <li class="tab">Coding</li>
+        <li class="tab active">JavaScript</li>
+        <li class="tab">Podcasts</li>
+        <li class="tab">Databases</li>
+        <li class="tab">Web Development</li>
+        <li class="tab">Unboxing</li>
+        <li class="tab">History</li>
+        <li class="tab">Programming</li>
+        <li class="tab">Gadgets</li>
+        <li class="tab">Algorithms</li>
+        <li class="tab">Comedy</li>
+        <li class="tab">Gaming</li>
+        <li class="tab">Share Market</li>
+        <li class="tab">Smartphones</li>
+        <li class="tab">Data Structure</li>
+      </ul>
+      <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
     </div>
-    <div class="slide">
-      <img src="../images/bbs-story.jpeg" alt="Slide 2">
-    </div>
-    <div class="slide">
-      <img src="../images/dhurav-rathe-story.jpg"d alt="Slide 3">
-    </div>
-  </div>
-</div>
 
-<svg aria-label="Unlike" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(255, 48, 64)" height="24" role="img" viewBox="0 0 48 48" width="24"><title>Unlike</title><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-<script>
-  const slider = document.getElementById("slider");
-  let slideIndex = 0;
-  let startX = 0;
-  let currentX = 0;
-
-  slider.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-    currentX = startX;
-  });
-
-  slider.addEventListener("touchmove", (e) => {
-    if (startX === null) {
-      return;
-    }
-
-    currentX = e.touches[0].clientX;
-    const deltaX = currentX - startX;
-    slider.style.transform = `translateX(calc(-${slideIndex * 100}% + ${deltaX}px))`;
-
-    e.preventDefault();
-  });
-
-  slider.addEventListener("touchend", () => {
-    const deltaX = currentX - startX;
-    if (deltaX > 50) {
-      showSlide(slideIndex - 1);
-    } else if (deltaX < -50) {
-      showSlide(slideIndex + 1);
-    } else {
-      showSlide(slideIndex);
-    }
-
-    startX = null;
-  });
-
-  function showSlide(index) {
-    if (index < 0) {
-      index = slider.children.length - 1;
-    } else if (index >= slider.children.length) {
-      index = 0;
-    }
-    slider.style.transform = `translateX(-${index * 100}%)`;
-    slideIndex = index;
-  }
-
-  showSlide(slideIndex);
-</script>
-</body>
+  </body>
 </html>

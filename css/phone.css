@@ -330,3 +330,12 @@ object-fit: cover;
     fill:rgb(255, 48, 64);
 
 }
+
+.cont-video-owner-aoudio-cont {
+    margin-left: 10px;
+}
+
+#HowManylikes p{
+    color: #a8a8a8;
+
+}
