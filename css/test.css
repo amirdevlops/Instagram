@@ -92,8 +92,8 @@
 
 
 .div-cont-image-story{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
 
@@ -104,3 +104,15 @@
     height: 100%;
     object-fit: cover;
 }
+
+.tabs-box{
+  height: 14vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab{
+  width: 60px;
+  height: 60px;
+}
+
