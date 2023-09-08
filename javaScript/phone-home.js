@@ -1,4 +1,29 @@
-/*functions to change svg files to show emotions */
+
+/*function whereistheUSR(scrollThreshold, callback) {
+  // Listen for the scroll event
+  window.addEventListener("scroll", function() {
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    if (scrollY >= scrollThreshold) {
+      callback(true);
+    } else {
+      console.log("Keep scrolling...");
+      callback(false);
+    }
+  });
+}
+
+// Call whereistheUSR and provide a callback function
+whereistheUSR(500, function(hasReachedThreshold) {
+  console.log("User has reached the threshold: " + hasReachedThreshold);
+});*/
+ // Call the function to start monitoring the scroll position
+
+
+
+
+
+
 
 const changeSvg = () => {
     let ReelsSvgCont = document.getElementById("reels-horizontal-header");
@@ -99,8 +124,42 @@ const HowManylikes = document.getElementById("HowManylikes");
 
 });
 
-
+//this field will be upgraded according to the backend 
 let aoudiomakeroriganalcont = document.querySelector(".aoudio-maker-origanal-cont");
 
 aoudiomakeroriganalcont.innerHTML = `<b class=" aoudio-maker-origanal">sponcerd</b>`
+
+//end
+
+let showAccuntName = () => {
+  const rellpostername = document.getElementById("rell-poster-name");
+  const posternameaccuntcommnet = document.getElementById("poster-name-accunt-commnet");
+  posternameaccuntcommnet.textContent = "";
+  
+   posternameaccuntcommnet.textContent =  rellpostername.innerHTML;
+}
+
+showAccuntName();
+
+//a rando dunctions so that i can show hash tags 
+const getuserhashtagscomment = () => {
+  const getuserhashtagsBTN = document.getElementById("getuserhashtagsBTN");
+  const appendhashtags = document.getElementById("append-hashtags");
+  getuserhashtagsBTN.disabled = true;
+  getData = fetch("https://random-word-api.herokuapp.com/word?number=3");
+  getData.then((responseCode) => {
+      return responseCode.json()
+  }).then((DATA) => {
+      console.log(DATA)
+    
+      DATA.forEach((word) => {
+        const wordElement = document.createElement("p");
+        wordElement.textContent = "#" + word;
+        appendhashtags.appendChild(wordElement);
+      });
+  });
+  getuserhashtagsBTN.classList.add("XmjksG");
+
+
+}
 

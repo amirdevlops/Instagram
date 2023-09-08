@@ -1,4 +1,4 @@
-const tabsBox = document.querySelector(".tabs-box");
+/*const tabsBox = document.querySelector(".tabs-box");
 const allTabs = tabsBox.querySelectorAll(".tab");
 const arrowIcons = document.querySelectorAll(".icon i");
 
@@ -55,4 +55,43 @@ tabsBox.addEventListener("touchmove", (e) => {
 tabsBox.addEventListener("touchend", dragStop);
 
 window.addEventListener("resize", handleIcons);
-handleIcons(); // Initial icon handling
+handleIcons(); // Initial icon handling   
+
+
+function changeDivClassOnScroll() {
+  
+    // Define the scroll threshold at which you want to change the class
+    const scrollThreshold = 200; // Change this value as needed
+    
+    // Listen for the scroll event
+    window.addEventListener("scroll", function() {
+        // Get the current scroll position
+        const scrollY = window.scrollY || window.pageYOffset;
+        
+        // Check if the scroll position is greater than or equal to the threshold
+        if (scrollY >= scrollThreshold) {
+          return true; 
+        } 
+        
+    });
+  }
+
+
+  let a = changeDivClassOnScroll()
+  console.log(a)
+
+  function hasScrollCrossedThreshold() {
+    // Define the scroll threshold at which you want to change the class
+    const scrollThreshold = 300; // Change this value as needed
+    
+    // Get the current scroll position
+    const scrollY = window.scrollY || window.pageYOffset;
+    
+    // Check if the scroll position is greater than or equal to the threshold
+    return scrollY >= scrollThreshold;
+}
+
+let a = hasScrollCrossedThreshold();
+console.log(a);*/
+
+

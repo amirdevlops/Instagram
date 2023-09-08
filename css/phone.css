@@ -5,6 +5,10 @@
 
 }
 
+.XmjksG{
+    display: none;
+}
+
 .header-horizontal {
     width: 100%;
 }
@@ -13,7 +17,9 @@
     display: none;
 }
 
-
+.reels-folloing-cont{
+    padding-top: 20px;
+}
 
 .instagram-logo-name {
     display: none;
@@ -168,9 +174,8 @@
 }
 
 
-.story-mainbody{
-    background-color: black ;
-    height: 300vh;
+.story-mainbody {
+    background-color: black;
     padding-top: 12%;
 }
 
@@ -231,14 +236,14 @@
 
 
 /* the upper code is for testing perpose only*/
-.video-header-cont-main-container{
+.video-header-cont-main-container {
     display: flex;
     padding: 0 16px 12px;
     justify-content: space-between;
 }
 
 
-.owner-image-rells-cont{
+.owner-image-rells-cont {
     width: 32px;
     height: 32px;
     border: none;
@@ -246,90 +251,92 @@
     overflow: hidden;
 }
 
-.owner-image-rells-cont img{
+.owner-image-rells-cont img {
     width: 100%;
     height: 100%;
 }
-svg{
+
+svg {
     fill: #fff;
 }
-#more-reels-header{
+
+#more-reels-header {
     fill: rgb(245, 245, 245);
 
 }
 
-.cont-video-owner-aoudio-cont b{
-color: white;
+.cont-video-owner-aoudio-cont b {
+    color: white;
 }
 
-.video-owner-name-reels{
-    font-weight:900 ;
+.video-owner-name-reels {
+    font-weight: 900;
 
 }
 
-.aoudio-maker-origanal{
+.aoudio-maker-origanal {
     font-size: 11px;
 }
 
-.more-reels-svg-cont{
+.more-reels-svg-cont {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 9vw;
 }
 
-#comment-section-heart-svg{
+#comment-section-heart-svg {
     width: 24px;
     height: 24px;
 }
 
-.svg-cont-comment-sections{
+.svg-cont-comment-sections {
     display: flex;
 }
 
-.video-cont-image{
+.video-cont-image {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.reels-folloing-cont-video{
+.reels-folloing-cont-video {
     width: 74%;
     background-color: red;
     height: 70vh;
 }
 
-.reels-folloing-cont-video img{
-width: 100%;
-height: 100%;
-object-fit: cover;
+.reels-folloing-cont-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.svg-cont-comment-sections{
+.svg-cont-comment-sections {
     width: 45%;
     display: flex;
     justify-content: space-around;
     margin-left: 8px;
 }
 
-.cont-comment-section{
+.cont-comment-section {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
 
-.comment-section-save{
+.comment-section-save {
     margin-right: 20px;
 }
 
 
-.fillwhite{
+.fillwhite {
     fill: #fff;
 }
 
-.x1n2onr6{
-    fill:rgb(255, 48, 64);
+.x1n2onr6 {
+    fill: rgb(255, 48, 64);
 
 }
 
@@ -337,7 +344,66 @@ object-fit: cover;
     margin-left: 10px;
 }
 
-#HowManylikes p{
-    color: #a8a8a8;
+#HowManylikes p {
+    color: #f5f5f5;
+    font-size: 14px;
+}
 
+#poster-name-accunt-commnet {
+    color: #f5f5f5;
+    font-size: 13px;
+}
+
+.comment-section-mai-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-section-cont-commment {
+    width: 87%;
+}
+
+.post-tital-comment-section {
+    color: #f5f5f5;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+
+.how-many-likes-main-cont {
+    width: 100%;
+}
+
+.poster-name-accunt-commnet-main-containr {
+    display: flex;
+}
+
+#getuserhashtagsBTN{
+    background-color: transparent;
+    color: #a8a8a8a8;
+    font-size: 12px;
+    border: none;
+}
+#append-hashtags{
+    display: flex;
+}
+
+
+#append-hashtags p {
+    color: #cce7fc;
+    font-size: 11px;
+    padding: 0 2px;
+}
+
+.view-all-comments{
+    color: #a8a8a8a8;
+    font-size: 13px;
+    
+}
+
+.post-ago-comment{
+    color: #a8a8a8a8;
+    font-size: 10px;
+    
 }
